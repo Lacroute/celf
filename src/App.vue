@@ -1,33 +1,16 @@
 <template>
-  <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <hello></hello>
-    <p>
-      Welcome to your Vue.js app!
-    </p>
-    <p>
-      To get a better understanding of how this boilerplate works, check out
-      <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
-      It is also recommended to go through the docs for
-      <a href="http://webpack.github.io/" target="_blank">Webpack</a> and
-      <a href="http://vuejs.github.io/vue-loader/" target="_blank">vue-loader</a>.
-      If you have any issues with the setup, please file an issue at this boilerplate's
-      <a href="https://github.com/vuejs-templates/webpack" target="_blank">repository</a>.
-    </p>
-    <p>
-      You may also want to checkout
-      <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
-      <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
-    </p>
+  <div class="">
+    <a v-link="{ path: '/' }"><img class="logo" src="./assets/CELF.png"></a>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
-
 export default {
-  components: {
-    Hello
+
+  ready () {
+    this.$route.router.go('/accueil')
+    // this.$route.router.go('/videos')
   }
 }
 </script>
@@ -35,6 +18,7 @@ export default {
 <style>
 html {
   height: 100%;
+  cursor: nw-resize;
 }
 
 body {
@@ -48,7 +32,7 @@ body {
   color: #2c3e50;
   margin-top: -100px;
   max-width: 600px;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   text-align: center;
 }
 
@@ -56,9 +40,33 @@ body {
   color: #42b983;
   text-decoration: none;
 }
-
+h1{
+  margin-bottom: 1.5em;
+}
 .logo {
-  width: 100px;
-  height: 100px
+  max-width: 100%;
+  max-height: 100%;
+  max-width: 10px;
+}
+.inline{
+  display: inline;
+  max-height: 35px;
+  vertical-align: middle;
+}
+ul{
+  text-align: left;
+}
+li{
+  list-style: none;
+  margin-top: 1em;
+}
+li:before{
+  content: ' ';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(./assets/boule.jpg);
+  background-size: cover;
+  vertical-align: middle;
 }
 </style>
