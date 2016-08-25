@@ -1,15 +1,24 @@
 <template>
-  <div class="">
-    <a v-link="{ path: '/accueil' }"><img class="logo" src="../static/img/CELF.png"></a>
+  <div>
+    <header v-show="inside">
+      <nav>
+        <a v-link="{ path: '/accueil' }"><img class="logo" src="../static/img/CELF.png"></a>
+      </nav>
+    </header>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+      inside: true
+    }
+  },
 
   ready () {
-    this.$route.router.go('/accueil')
+    this.$route.router.go('/intro')
   }
 }
 </script>
@@ -24,7 +33,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  background: gold;
+  background: url(../static/img/bg.jpg);
 }
 
 #app {
@@ -32,13 +41,12 @@ body {
   max-width: 600px;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   text-align: center;
-  background: bisque;
-  margin-top: 200px;
-  padding: 30px
+  background: #fff;
+  margin: 30px auto;
 }
 
 #app a {
-  color: #42b983;
+  color: #53af31;
   text-decoration: none;
 }
 h1{

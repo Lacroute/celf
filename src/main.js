@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from './components/Home'
 import Videos from './components/Videos'
 import Zut from './components/Zut'
+import Intro from './components/Intro'
 
 /* eslint-disable no-new */
 Vue.use(VueRouter)
@@ -25,6 +26,10 @@ router.map({
   '/zut': {
     name: 'zut',
     component: Zut
+  },
+  '/intro': {
+    name: 'intro',
+    component: Intro
   }
 })
 
