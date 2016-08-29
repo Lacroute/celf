@@ -82,7 +82,7 @@ export default {
     transform: rotate(0);
   }
   50%{
-    transform: rotate(1440deg) scale(20);
+    transform: rotate(1440deg) scale(30);
   }
   100% {
     transform: rotate(0) scale(0);

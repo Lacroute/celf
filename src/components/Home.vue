@@ -3,12 +3,12 @@
   <h1>
     Bienvenue sur le portail du<img class="logo inline" src="../../static/img/CELF.png">!!
   </h1>
-  <ul>
-    <li>Jonas de la repro a compilé nos vidéos <a v-link="{ path: '/zut' }">ICI</a></li>
-    <li>Sylvie du pôle CESE, Communication Événements Sortie d'Équipe nous a inscrit sur le réseau des jeunes ici <a href="https://www.facebook.com/lecelf">https://www.facebook.com/lecelf</a></li>
-    <li>Thiery le cuisto de la cafet a écrit un dossier de presse <a href="./assets/pdf/dp.pdf">ICI</a></li>
-  </ul>
-
+  <div class="overview">
+    <p>Le Comité extraordinaire du loto français vous ouvre les portes d'un loto animé par une équipe de professionnels, formés à manipuler les boules et les blagues.</p>
+    <p>Oubliez un temps les problèmes de photocopieuse de la compta et le dossier de fusion-acquisition du board mensuel. Dans la convivialité, cédez à la joie de crier « Bingo ! » avant vos amis. La garantie <img class="logo inline" src="../../static/img/CELF.png">, c'est la bonne humeur au service de l'amusement ; la magie des chiffres au service de la convivialité.</p>
+    <p>Le <img class="logo inline" src="../../static/img/CELF.png">, c'est aussi le loto dont vous êtes le héros : pour y participer, ramenez un lot à mettre en jeu (livre, bibelot, agrafeuse du collègue, etc.), il vous donnera droit à vos cartons de jeu.</p>
+    <p>Le <img class="logo inline" src="../../static/img/CELF.png">, l'efficacité impartiale au service de la convivialité.</p>
+  </div>
   <fieldset>
     <legend>Sponsors</legend>
     <img src="../../static/sponsors/rushlin_hp.gif" alt="" />
@@ -29,4 +29,11 @@ export default {
 </script>
 
 <style lang="css">
+  .overview{
+      padding: 20px;
+  }
+
+  p + p {
+    margin-top: 1.5em;
+  }
 </style>

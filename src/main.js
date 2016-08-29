@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Videos from './components/Videos'
 import Zut from './components/Zut'
 import Intro from './components/Intro'
+import Contact from './components/Contact'
 
 /* eslint-disable no-new */
 Vue.use(VueRouter)
@@ -30,6 +31,10 @@ router.map({
   '/intro': {
     name: 'intro',
     component: Intro
+  },
+  '/contact': {
+    name: 'contact',
+    component: Contact
   }
 })
 

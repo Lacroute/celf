@@ -3,6 +3,12 @@
     <header v-show="inside">
       <nav>
         <a v-link="{ path: '/accueil' }"><img class="logo" src="../static/img/CELF.png"></a>
+        <ul>
+          <li><a v-link="{ path: '/zut' }">Les vidéos</a></li>
+          <li><a v-link="{ path: '/contact' }">Les contacts</a></li>
+          <li><a href="./assets/pdf/dp.pdf">Le CV</a></li>
+        </ul>
+
       </nav>
     </header>
     <router-view></router-view>
@@ -38,7 +44,7 @@ body {
 
 #app {
   color: #2c3e50;
-  max-width: 600px;
+  max-width: 800px;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   text-align: center;
   background: #fff;
@@ -62,11 +68,17 @@ h1{
   vertical-align: middle;
 }
 ul{
-  text-align: left;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 li{
   list-style: none;
   margin-top: 1em;
+  display: inline-block;
+}
+li + li {
+  margin-left: 40px;
 }
 li:before{
   content: ' ';
