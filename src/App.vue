@@ -54,6 +54,7 @@ body {
 #app a {
   color: #53af31;
   text-decoration: none;
+  cursor: url(../static/img/banana_action.png), auto;
 }
 h1{
   margin-bottom: 1.5em;
