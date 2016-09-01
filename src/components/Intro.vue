@@ -27,8 +27,7 @@ export default {
 
   methods: {
     rotate: function (e) {
-      // this.tips = false
-      console.log('ROTATE', e.target)
+      this.$root.$els.audio.play()
 
       e.target.className += ' rotate'
 

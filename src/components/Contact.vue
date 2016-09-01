@@ -1,5 +1,16 @@
 <template>
-  <a href="https://www.facebook.com/lecelf">https://www.facebook.com/lecelf</a>
+  <ul>
+    <li>
+      <p>
+        Facebook > <a href="https://www.facebook.com/lecelf">https://www.facebook.com/lecelf</a>
+      </p>
+    </li>
+    <li>
+      <p>
+        Couriel > <a href="https://www.facebook.com/lecelf">bingo@lecelf.net</a>
+      </p>
+    </li>
+  </ul>
 </template>
 <script>
 export default {
@@ -10,6 +21,16 @@ export default {
   }
 }
 </script>
-<style media="screen">
+<style media="screen" scoped>
 
+  ul{
+    text-align: left;
+    padding: 30px;
+  }
+  li{
+    display: block;
+  }
+  p{
+    display: inline;
+  }
 </style>

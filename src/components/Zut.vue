@@ -17,5 +17,8 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
+p{
+  padding: 30px;
+}
 </style>

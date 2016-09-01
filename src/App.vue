@@ -1,4 +1,4 @@
-<template>
+lo  <template>
   <div>
     <header v-show="inside">
       <nav>
@@ -6,10 +6,10 @@
         <ul>
           <li><a v-link="{ path: '/zut' }">Les vidéos</a></li>
           <li><a v-link="{ path: '/contact' }">Les contacts</a></li>
-          <li><a href="./assets/pdf/dp.pdf">Le CV</a></li>
+          <li><a href="./assets/pdf/dp.pdf" target="_blank">Le CV</a></li>
         </ul>
-
       </nav>
+      <audio v-el:audio src="../static/Stevie_Wonder_-_Part_Time_Lover.mp3" loop></audio>
     </header>
     <router-view></router-view>
   </div>
@@ -32,7 +32,7 @@ export default {
 <style>
 html {
   height: 100%;
-  cursor: nw-resize;
+  cursor: url(../static/img/banana.png), auto;
 }
 
 body {
@@ -72,12 +72,12 @@ ul{
   margin: 0;
   padding: 0;
 }
-li{
+nav li{
   list-style: none;
   margin-top: 1em;
   display: inline-block;
 }
-li + li {
+nav li + li {
   margin-left: 40px;
 }
 li:before{
@@ -85,7 +85,7 @@ li:before{
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url(../static/img/boule.jpg);
+  background: url(../static/img/boule.png);
   background-size: cover;
   vertical-align: middle;
 }
