@@ -6,7 +6,7 @@ lo  <template>
         <ul>
           <li><a v-link="{ path: '/zut' }">Les vidéos</a></li>
           <li><a v-link="{ path: '/contact' }">Les contacts</a></li>
-          <li><a href="./assets/pdf/dp.pdf" target="_blank">Le CV</a></li>
+          <li><a href="../static/DP_CELF.pdf" target="_blank">Le CV</a></li>
         </ul>
       </nav>
       <audio v-el:audio src="static/Stevie_Wonder_-_Part_Time_Lover.mp3" loop></audio>
@@ -32,14 +32,14 @@ export default {
 <style>
 html {
   height: 100%;
-  cursor: url(../static/img/banana.png), auto;
+  cursor: url(/static/img/banana.png), auto;
 }
 
 body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  background: url(../static/img/bg.jpg);
+  background: url(/static/img/bg.jpg);
 }
 
 #app {
@@ -54,7 +54,7 @@ body {
 #app a {
   color: #53af31;
   text-decoration: none;
-  cursor: url(../static/img/banana_action.png), auto;
+  cursor: url(/static/img/banana_action.png), auto;
 }
 h1{
   margin-bottom: 1.5em;
@@ -86,7 +86,7 @@ li:before{
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url(../static/img/boule.png);
+  background: url(/static/img/boule.png);
   background-size: cover;
   vertical-align: middle;
 }

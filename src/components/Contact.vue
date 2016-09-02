@@ -2,12 +2,12 @@
   <ul>
     <li>
       <p>
-        Facebook > <a href="https://www.facebook.com/lecelf">https://www.facebook.com/lecelf</a>
+        Facebook > <a href="https://www.facebook.com/lecelf" target="_blank">https://www.facebook.com/lecelf</a>
       </p>
     </li>
     <li>
       <p>
-        Couriel > <a href="https://www.facebook.com/lecelf">bingo@lecelf.net</a>
+        Couriel > <a href="mailto:bingo@lecelf.net">bingo@lecelf.net</a>
       </p>
     </li>
   </ul>
