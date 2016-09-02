@@ -1,6 +1,9 @@
-lo  <template>
+<template>
   <div>
     <header v-show="inside">
+      <a id="mute" v-el:mute href="#" @click.prevent="muteMusic" >
+        <img src="../static/img/mute.png" alt="" />
+      </a>
       <nav>
         <a v-link="{ path: '/accueil' }"><img class="logo" src="../static/img/CELF.png"></a>
         <ul>
@@ -25,20 +28,30 @@ export default {
 
   ready () {
     this.$route.router.go('/intro')
+  },
+
+  methods: {
+    muteMusic: function () {
+      if (!this.$els.audio.paused) {
+        this.$els.audio.pause()
+        this.$els.mute.firstElementChild.src = '../static/img/play.png'
+      } else {
+        this.$els.audio.play()
+        this.$els.mute.firstElementChild.src = '../static/img/mute.png'
+      }
+    }
   }
 }
 </script>
 
 <style>
 html {
-  height: 100%;
   cursor: url(/static/img/banana.png), auto;
 }
 
 body {
   align-items: center;
   justify-content: center;
-  height: 100%;
   background: url(/static/img/bg.jpg);
 }
 
@@ -68,6 +81,9 @@ h1{
   max-height: 35px;
   vertical-align: middle;
 }
+header {
+  position: relative;
+}
 ul{
   text-align: center;
   margin: 0;
@@ -89,5 +105,16 @@ li:before{
   background: url(/static/img/boule.png);
   background-size: cover;
   vertical-align: middle;
+}
+#mute{
+  max-width: 30px;
+  min-width: 30px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#mute img {
+  max-width: 100%;
 }
 </style>

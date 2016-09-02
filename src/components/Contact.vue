@@ -7,7 +7,12 @@
     </li>
     <li>
       <p>
-        Couriel > <a href="mailto:bingo@lecelf.net">bingo@lecelf.net</a>
+        Courriel > <a href="mailto:bingo@lecelf.net">bingo@lecelf.net</a>
+      </p>
+    </li>
+    <li>
+      <p>
+        Booking > <a href="mailto:isa@bejoue.fr">isa@bejoue.fr</a>
       </p>
     </li>
   </ul>

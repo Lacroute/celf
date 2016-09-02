@@ -34,7 +34,6 @@ export default {
       let that = this
       setTimeout(function () {
         e.target.parentNode.className += ' hide'
-        console.log(e.target.nextSibling.nextSibling)
         e.target.nextSibling.nextSibling.className = 'fade-out'
         setTimeout(function () {
           that.$route.router.go('/accueil')
