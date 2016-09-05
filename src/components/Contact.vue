@@ -38,4 +38,12 @@ export default {
   p{
     display: inline;
   }
+  @media only screen and (max-width: 1024px){
+    ul{
+      margin-top: 60px;
+    }
+    li {
+      margin-bottom: 20px;
+    }
+  }
 </style>

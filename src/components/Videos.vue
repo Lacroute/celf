@@ -1,6 +1,6 @@
 <template>
   <h1>LES VIDÉOS !!</h1>
-  <div v-for="url in urls">
+  <div v-for="url in urls" class="wrapper-video">
     <iframe type="text/html" width="640" height="390"
     v-bind:src="url"
     frameborder="0"></iframe>
@@ -23,4 +23,9 @@ export default {
 </script>
 
 <style>
+@media only screen and (max-width: 1024px){
+  .wrapper-video{
+    padding-bottom: 20px;
+  }
+}
 </style>

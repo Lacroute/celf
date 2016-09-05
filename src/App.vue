@@ -117,4 +117,26 @@ li:before{
 #mute img {
   max-width: 100%;
 }
+
+@media only screen and (max-width: 1024px){
+  #app{
+    font-size: 2rem;
+  }
+  .logo.inline{
+    max-height: 80px;
+  }
+  nav{
+    font-size: 2.5rem;
+  }
+  #mute{
+    max-width: 80px;
+    min-width: 80px;
+    top: 20px;
+    right: 20px;
+  }
+  li:before{
+    width: 40px;
+    height: 40px;
+  }
+}
 </style>

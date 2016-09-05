@@ -76,15 +76,20 @@ export default {
   }
 
   @keyframes roll {
-  0% {
-    transform: rotate(0);
+    0% {
+      transform: rotate(0);
+    }
+    50%{
+      transform: rotate(1440deg) scale(30);
+    }
+    100% {
+      transform: rotate(0) scale(0);
+    }
   }
-  50%{
-    transform: rotate(1440deg) scale(30);
-  }
-  100% {
-    transform: rotate(0) scale(0);
-  }
-}
 
+  @media only screen and (max-width: 1024px){
+    .logo{
+      max-height: 100%;
+    }
+  }
 </style>
