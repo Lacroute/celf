@@ -12,7 +12,7 @@
           <li><a href="../static/DP_CELF.pdf" target="_blank">Le CV</a></li>
         </ul>
       </nav>
-      <audio v-el:audio src="static/Stevie_Wonder_-_Part_Time_Lover.mp3" loop></audio>
+      <audio v-el:audio src="static/theme.mp3" loop></audio>
     </header>
     <router-view></router-view>
   </div>

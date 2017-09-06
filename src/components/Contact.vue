@@ -7,6 +7,16 @@
     </li>
     <li>
       <p>
+        Instagram > <a href="https://www.instagram.com/le.celf/">https://www.instagram.com/le.celf</a>
+      </p>
+    </li>
+    <li>
+      <p>
+        Twitter > <a href="https://twitter.com/le_celf">https://twitter.com/le_celf</a>
+      </p>
+    </li>
+    <li>
+      <p>
         Courriel > <a href="mailto:bingo@lecelf.net">bingo@lecelf.net</a>
       </p>
     </li>
@@ -15,6 +25,7 @@
         Booking > <a href="mailto:isa@bejoue.fr">isa@bejoue.fr</a>
       </p>
     </li>
+
   </ul>
 </template>
 <script>
